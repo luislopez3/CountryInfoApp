@@ -20,11 +20,11 @@ export default function ShowDetails() {
         ({ name, capital, languages, currencies, area, flag }, index) => {
           return (
             <div key={index}>
-              <h2>{name}</h2>
-              <p>{capital}</p>
-              <p>{currencies[0].name}</p>
-              <p>{languages[0].name}</p>
-              <p>{area}</p>
+              <h3>{`Country Name: ${name}`}</h3>
+              <p>{`Capital City: ${capital}`}</p>
+              <p>{`Currency: ${currencies[0].name}`}</p>
+              <p>{`Most Popular Language: ${languages[0].name}`}</p>
+              <p>{`Area: ${area} sq km`}</p>
               <img width='100' src={flag} alt='country flag'/>
             </div>
           );
