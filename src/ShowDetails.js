@@ -16,17 +16,17 @@ export default function ShowDetails() {
   return (
     <div>
       <h3>Details</h3>
-      <p>Click the button to view the details about this Country.</p>
       {countryDetails.filter((item) => item.name === country).map(
-        ({ name, capital, languages, currencies, flag }, index) => {
+        ({ name, capital, languages, currencies, area, flag }, index) => {
           return (
-            <li key={index}>
+            <div key={index}>
               <h2>{name}</h2>
               <p>{capital}</p>
               <p>{currencies[0].name}</p>
-              <p>languages</p>
+              <p>{languages[0].name}</p>
+              <p>{area}</p>
               <img width='100' src={flag} alt='country flag'/>
-            </li>
+            </div>
           );
         }
       )}
