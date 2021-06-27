@@ -10,9 +10,9 @@ export default function Regions() {
     <div>
       <h1>Regions</h1>
       <p>Select a region to view the Countries within it.</p>
-      {regionList.map((region) => {
+      {regionList.map((region, index) => {
         return (
-          <ul>
+          <ul key={index}>
             <Link to={`${url}/${region}`}>
               <button>{region}</button>
             </Link>
