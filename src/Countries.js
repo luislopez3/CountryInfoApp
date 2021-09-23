@@ -24,9 +24,9 @@ export default function Countries() {
     <div>
       <h2>Countries</h2>
       <p>Select a Country to view the details about it.</p>
-      {countries.map((country) => {
+      {countries.map((country, index) => {
         return (
-          <ul>
+          <ul key={index}>
             <Link to={`${url}/${country.name}`}>
               <button>{country.name}</button>
             </Link>

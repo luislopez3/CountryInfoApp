@@ -8,7 +8,6 @@ export default function ShowDetails() {
 
   useEffect(() => {
     countryInfo().then((response) => {
-      console.log(response);
       setCountryDetails(response);
     });
   }, [country]);
@@ -16,8 +15,9 @@ export default function ShowDetails() {
   return (
     <div>
       <h3>Details</h3>
-      {countryDetails.filter((item) => item.name === country).map(
-        ({ name, capital, languages, currencies, area, flag }, index) => {
+      {countryDetails
+        .filter((item) => item.name === country)
+        .map(({ name, capital, languages, currencies, area, flags }, index) => {
           return (
             <div key={index}>
               <h3>{`Country Name: ${name}`}</h3>
@@ -25,11 +25,10 @@ export default function ShowDetails() {
               <p>{`Currency: ${currencies[0].name}`}</p>
               <p>{`Most Popular Language: ${languages[0].name}`}</p>
               <p>{`Area: ${area} sq km`}</p>
-              <img width='100' src={flag} alt='country flag'/>
+              <img width="100" src={flags[1]} alt="country flag" />
             </div>
           );
-        }
-      )}
+        })}
     </div>
   );
 }
