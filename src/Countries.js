@@ -20,17 +20,30 @@ export default function Countries() {
     }
   }, [region]);
 
+  const showDetails = (e) => {
+    e.preventDefault();
+    return (
+    <contianer>
+      <nav>
+        <a href="#details"> </a>
+      </nav>
+    </contianer>
+    );
+  };
+
   return (
     <div>
-      <h2>Countries</h2>
+      <h1>Countries</h1>
       <p>Select a Country to view the details about it.</p>
       {countries.map((country, index) => {
         return (
-          <ul key={index}>
-            <Link to={`${url}/${country.name}`}>
-              <button>{country.name}</button>
-            </Link>
-          </ul>
+          <div className="country-row">
+            <ul className="country-column" key={index}>
+              <Link to={`${url}/${country.name}`}>
+                <button onClick={(e) => showDetails}>{country.name}</button>
+              </Link>
+            </ul>
+          </div>
         );
       })}
       <div>

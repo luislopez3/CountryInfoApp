@@ -9,7 +9,9 @@ export default function App() {
   return (
     <Router>
       <div style={{ width: 1000, margin: "0 auto", padding: 20 }}>
-        <Link to="/">Welcome</Link> | <Link to="/regions">Regions</Link> | <Link to="/countries">All Countries</Link>
+        <Link to="/">Welcome</Link> |
+        <Link to="/regions">Regions</Link> |
+        <Link to="/countries">All Countries</Link>
         <hr />
         <Route exact path="/">
           <Welcome />

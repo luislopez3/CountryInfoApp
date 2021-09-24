@@ -9,6 +9,7 @@ export default function Welcome() {
           the World.
         </p>
         <p>To begin, click the "Regions" link.</p>
+        <p>Or you can browse through "All Countries".</p>
       </div>
     );
   }

@@ -13,8 +13,8 @@ export default function ShowDetails() {
   }, [country]);
 
   return (
-    <div>
-      <h3>Details</h3>
+    <section id="details">
+      <h1>Details</h1>
       {countryDetails
         .filter((item) => item.name === country)
         .map(({ name, capital, languages, currencies, area, flags }, index) => {
@@ -25,10 +25,10 @@ export default function ShowDetails() {
               <p>{`Currency: ${currencies[0].name}`}</p>
               <p>{`Most Popular Language: ${languages[0].name}`}</p>
               <p>{`Area: ${area} sq km`}</p>
-              <img width="100" src={flags[1]} alt="country flag" />
+              <img width="300" src={flags[1]} alt="country flag" />
             </div>
           );
         })}
-    </div>
+    </section>
   );
 }
