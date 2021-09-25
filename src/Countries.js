@@ -27,11 +27,13 @@ export default function Countries() {
       {countries.map((country, index) => {
         return (
           <div className="country-row">
-            <ul className="country-column" key={index}>
-              <Link to={`${url}/${country.name}`}>
-                <button>{country.name}</button>
-              </Link>
-            </ul>
+            <div className="country-column">
+              <ul key={index}>
+                <Link to={`${url}/${country.name}`}>
+                  <button>{country.name}</button>
+                </Link>
+              </ul>
+            </div>
           </div>
         );
       })}

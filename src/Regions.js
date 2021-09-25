@@ -13,11 +13,13 @@ export default function Regions() {
       {regionList.map((region, index) => {
         return (
           <div className="country-row">
-            <ul className="country-column" key={index}>
-              <Link to={`${url}/${region}`}>
-                <button>{region}</button>
-              </Link>
-            </ul>
+            <div className="country-column">
+              <ul key={index}>
+                <Link to={`${url}/${region}`}>
+                  <button>{region}</button>
+                </Link>
+              </ul>
+            </div>
           </div>
         );
       })}
