@@ -26,8 +26,8 @@ export default function Countries() {
       <p>Select a Country to view the details about it.</p>
       {countries.map((country, index) => {
         return (
-          <div className="country-row">
-            <div className="country-column">
+          <div className="country-row" key={index}>
+            <div className="country-column" key={index}>
               <ul key={index}>
                 <Link to={`${url}/${country.name}`}>
                   <button>{country.name}</button>

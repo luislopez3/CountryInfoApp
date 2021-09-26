@@ -7,13 +7,13 @@ export default function Regions() {
   const { url, path } = useRouteMatch();
 
   return (
-    <div>
+    <>
       <h1>Regions</h1>
       <p>Select a region to view the Countries within it.</p>
       {regionList.map((region, index) => {
         return (
-          <div className="country-row">
-            <div className="country-column">
+          <div className="country-row" key={index}>
+            <div className="country-column" key={index}>
               <ul key={index}>
                 <Link to={`${url}/${region}`}>
                   <button>{region}</button>
@@ -27,6 +27,6 @@ export default function Regions() {
       <Route path={`${path}/:region`}>
         <Countries />
       </Route>
-    </div>
+    </>
   );
 }
