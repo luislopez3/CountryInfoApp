@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Show Details component Matches the snapshot 1`] = `
-<div>
-  <h3>
+<>
+  <h1>
     Details
-  </h3>
-</div>
+  </h1>
+</>
 `;
