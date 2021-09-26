@@ -9,6 +9,14 @@ a {
   padding: 10px;
 }
 
+a:hover {
+  opacity: 65%;
+}
+
+a:after {
+  opacity: 65%;
+}
+
 h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 24px;
@@ -38,10 +46,6 @@ button {
   padding: 10px;
 }
 
-button:hover {
-  opacity: 65%;
-}
-
 .country-row {
   display: inline-block;
   width: 12rem;
@@ -57,4 +61,51 @@ button:hover {
 
 img {
   padding-left: 10px;
+}
+
+/* -------  Media Query ------- */
+
+@media all and (max-width: 768px) {
+  div {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  ul {
+    padding: 0px;
+  }
+
+  hr {
+    margin-top: 30px;
+  }
+
+  .nav,
+  a {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    font-size: 38px;
+    padding: 0px;
+  }
+
+  p,
+  h3 {
+    font-size: 32px;
+    padding: 0px;
+  }
+
+  button {
+    font-size: 28px;
+    width: 18rem;
+  }
+
+  .country-row {
+    width: 20rem;
+  }
+
+  .country-column {
+    text-align: center;
+  }
 }
