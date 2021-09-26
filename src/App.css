@@ -10,11 +10,11 @@ a {
 }
 
 a:hover {
-  opacity: 65%;
+  opacity: 65;
 }
 
 a:after {
-  opacity: 65%;
+  opacity: 65;
 }
 
 h1 {
