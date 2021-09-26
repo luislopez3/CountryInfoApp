@@ -1,63 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Show Details component Matches the snapshot 1`] = `
-<>
+Array [
   <h1>
     Regions
-  </h1>
+  </h1>,
   <p>
     Select a region to view the Countries within it.
-  </p>
-  <ul>
-    <a
-      href="//Africa"
-      onClick={[Function]}
+  </p>,
+  <div
+    className="country-row"
+  >
+    <div
+      className="country-column"
     >
-      <button>
-        Africa
-      </button>
-    </a>
-  </ul>
-  <ul>
-    <a
-      href="//Americas"
-      onClick={[Function]}
+      <ul>
+        <a
+          href="//Africa"
+          onClick={[Function]}
+        >
+          <button>
+            Africa
+          </button>
+        </a>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="country-row"
+  >
+    <div
+      className="country-column"
     >
-      <button>
-        Americas
-      </button>
-    </a>
-  </ul>
-  <ul>
-    <a
-      href="//Asia"
-      onClick={[Function]}
+      <ul>
+        <a
+          href="//Americas"
+          onClick={[Function]}
+        >
+          <button>
+            Americas
+          </button>
+        </a>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="country-row"
+  >
+    <div
+      className="country-column"
     >
-      <button>
-        Asia
-      </button>
-    </a>
-  </ul>
-  <ul>
-    <a
-      href="//Europe"
-      onClick={[Function]}
+      <ul>
+        <a
+          href="//Asia"
+          onClick={[Function]}
+        >
+          <button>
+            Asia
+          </button>
+        </a>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="country-row"
+  >
+    <div
+      className="country-column"
     >
-      <button>
-        Europe
-      </button>
-    </a>
-  </ul>
-  <ul>
-    <a
-      href="//Oceania"
-      onClick={[Function]}
+      <ul>
+        <a
+          href="//Europe"
+          onClick={[Function]}
+        >
+          <button>
+            Europe
+          </button>
+        </a>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="country-row"
+  >
+    <div
+      className="country-column"
     >
-      <button>
-        Oceania
-      </button>
-    </a>
-  </ul>
-  <hr />
-</>
+      <ul>
+        <a
+          href="//Oceania"
+          onClick={[Function]}
+        >
+          <button>
+            Oceania
+          </button>
+        </a>
+      </ul>
+    </div>
+  </div>,
+  <hr />,
+]
 `;

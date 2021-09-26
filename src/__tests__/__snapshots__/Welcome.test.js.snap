@@ -11,5 +11,8 @@ exports[`Show Details component Matches the snapshot 1`] = `
   <p>
     To begin, click the "Regions" link.
   </p>
+  <p>
+    Or you can browse through "All Countries".
+  </p>
 </div>
 `;
