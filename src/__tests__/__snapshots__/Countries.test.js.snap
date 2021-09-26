@@ -3,7 +3,7 @@
 exports[`Show Details component Matches the snapshot 1`] = `
 <div>
   <h1>
-    Countries
+    All Countries
   </h1>
   <p>
     Select a Country to view the details about it.
