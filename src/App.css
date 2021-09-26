@@ -9,12 +9,17 @@ a {
   padding: 10px;
 }
 
-a:hover {
-  opacity: 65;
+a:link {
+  opacity: 1;
 }
-
-a:after {
-  opacity: 65;
+a:visited {
+  opacity: 0.5;
+}
+a:hover {
+  opacity: 0.5;
+}
+a:active {
+  opacity: 0.5;
 }
 
 h1 {

@@ -22,7 +22,7 @@ export default function Countries() {
 
   return (
     <div>
-      <h1>Countries</h1>
+      <h1>All Countries</h1>
       <p>Select a Country to view the details about it.</p>
       {countries.map((country, index) => {
         return (
