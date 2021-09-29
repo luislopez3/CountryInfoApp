@@ -25,12 +25,12 @@ export default function ShowDetails() {
         .filter((item) => item.name === country)
         .map(
           (
-            { flags, name, capital, languages, currencies, population, area },
+            { flag, name, capital, languages, currencies, population, area },
             index
           ) => {
             return (
               <div ref={details} key={index}>
-                <img width="300" src={flags[1]} alt="country flag" />
+                <img width="300" src={flag} alt="country flag" />
                 <h3>{`Country Name: ${name}`}</h3>
                 <p>{`Capital City: ${capital}`}</p>
                 <p>{`Currency: ${currencies[0].name}`}</p>
