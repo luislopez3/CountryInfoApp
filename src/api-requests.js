@@ -6,6 +6,7 @@ export function allCountries() {
   return axios
     .get(baseURL + "/all")
     .then((response) => {
+      console.log(response.data);
       return response.data;
     })
     .catch(() => {
@@ -16,7 +17,7 @@ export function allCountries() {
 // function that searches the countries by region
 export function countryByRegion(region) {
   return axios
-    .get(`${baseURL}/continent/${region}`)
+    .get(`${baseURL}/region/${region}`)
     .then((response) => {
       return response.data;
     })
