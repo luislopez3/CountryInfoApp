@@ -23,7 +23,6 @@ export default function Regions() {
           </div>
         );
       })}
-      <hr />
       <Route path={`${path}/:region`}>
         <Countries />
       </Route>

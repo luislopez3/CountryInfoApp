@@ -66,7 +66,8 @@ export default function ShowDetails() {
                     {new Intl.NumberFormat().format(area)} km² (
                     {new Intl.NumberFormat().format(
                       Math.round(area * 0.621371)
-                    )} mi²)
+                    )}{" "}
+                    mi²)
                   </p>
                 </p>
                 <p className="country-info">

@@ -1,50 +1,60 @@
+body {
+  width: 100%;
+  background-color: #abd1c6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+hr {
+  width: 90%;
+  border: 1px solid #001e1d;
+  margin: 20px 0;
+}
+
 nav,
 a {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 24px;
   text-decoration: none;
-  color: cadetblue;
-  width: fit-content;
+  color: #004643;
   width: 100%;
-  padding: 10px;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-a:link {
-  opacity: 1;
-}
-a:visited {
-  opacity: 0.5;
-}
+
 a:hover {
   opacity: 0.5;
-  transition: .5 ease;
+  transition: 0.5 ease;
 }
-a:active {
-  opacity: 0.5;
-}
+
 img {
   max-width: 300px;
   height: 150px;
-  border: 3px solid cadetblue;
+  border: 3px solid #004643;
   border-radius: 20px;
   padding: 7px;
-  color: brown;
+  color: #e16162;
   font-size: 20px;
   font-weight: bold;
 }
 
 h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 28px;
-  color: cadetblue;
+  color: #001e1d;
   width: fit-content;
   width: 100%;
   padding: 10px;
 }
 
-p,
+p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #004643;
+  width: fit-content;
+  width: 100%;
+  padding-left: 10px;
+}
 h3 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 22px;
   font-weight: bold;
   color: brown;
@@ -54,23 +64,43 @@ h3 {
 }
 
 button {
-  display: inline-block;
-  background-color: cadetblue;
+  display: block;
+  background-color: #f9bc60;
   border-radius: 25px;
-  border: none;
-  color: brown;
+  border: 2px solid #004643;
+  color: #232946;
   font-size: 18px;
   font-weight: bold;
   width: 10rem;
   padding: 10px;
+  transition: 0.5s ease;
+}
+button:hover {
+  background-color: #232946;
+  color: #f9bc60;
+  border: 2px solid #f9bc60;
+  transition: 0.5s ease;
+}
+
+.header {
+  width: 80%;
+  margin: auto;
+  padding: 35px;
+}
+
+.header-links {
+  padding-right: 40px;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .country-info {
-  color: cadetblue;
-  font-weight: bold;
+  color: #001e1d;
+  font-weight: 500;
 }
 .country-details {
-  color: brown;
+  color: #004643;
+  font-weight: 800;
   display: inline;
 }
 
@@ -81,13 +111,9 @@ button {
 }
 
 .country-column {
-  width: 95%;
-  text-align: left;
-  padding-left: 5px;
-  margin-top: 5px;
+  width: 100%;
+  text-align: center;
 }
-
-
 
 /* -------  Media Query ------- */
 

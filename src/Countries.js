@@ -22,7 +22,7 @@ export default function Countries() {
 
   return (
     <div>
-      <h1>All Countries</h1>
+      <h1>Countries</h1>
       <p>Select a Country to view the details about it.</p>
       {countries.map((country, index) => {
         return (
@@ -30,7 +30,7 @@ export default function Countries() {
             <div className="country-column" key={index}>
               <ul key={index}>
                 <Link to={`${url}/${country.name}`}>
-                  <button>{country.name}</button>
+                  <button type="button">{country.name}</button>
                 </Link>
               </ul>
             </div>
@@ -38,7 +38,6 @@ export default function Countries() {
         );
       })}
       <div>
-        <hr />
         <Route path={`${path}/:country`}>
           <ShowDetails />
         </Route>
