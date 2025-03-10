@@ -22,7 +22,7 @@ export default function ShowDetails() {
     <>
       <h1>Details</h1>
       {countryDetails
-        .filter((item) => item.name === country)
+        .filter((item) => item.name === country.common)
         .map(
           (
             {
@@ -41,7 +41,7 @@ export default function ShowDetails() {
               <div ref={details} key={index}>
                 <img src={flag} alt={`${name}'s flag`} />
                 <h3 className="country-info">
-                  Country Name: <h4 className="country-details">{name}</h4>
+                  Country Name: <h4 className="country-details">{name.common}</h4>
                 </h3>
                 <p className="country-info">
                   Capital City: <p className="country-details">{capital}</p>

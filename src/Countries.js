@@ -29,8 +29,8 @@ export default function Countries() {
           <div className="country-row" key={index}>
             <div className="country-column" key={index}>
               <ul key={index}>
-                <Link to={`${url}/${country.name}`}>
-                  <button type="button">{country.name}</button>
+                <Link to={`${url}/${country.name.common}`}>
+                  <button type="button">{country.name.common}</button>
                 </Link>
               </ul>
             </div>
