@@ -1,5 +1,5 @@
 const axios = require("axios");
-const baseURL = "https://restcountries.com/v2";
+const baseURL = "https://restcountries.com/v3.1";
 
 // function that returns all of the countries
 export function allCountries() {
@@ -30,7 +30,7 @@ export function countryByRegion(region) {
 export function countryInfo() {
   return axios
     .get(
-      "https://restcountries.com/v2/all?fields=name,capital,currencies,population,latlng,area,languages,flag"
+      "https://restcountries.com/v3.1/all?fields=name,capital,currencies,population,latlng,area,languages,flag"
     )
     .then((response) => {
       return response.data;

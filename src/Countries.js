@@ -30,7 +30,7 @@ export default function Countries() {
             <div className="country-column" key={index}>
               <ul key={index}>
                 <Link to={`${url}/${country.name}`}>
-                  <button type="button">{country.name}</button>
+                  <button type="button">{country.name.common}</button>
                 </Link>
               </ul>
             </div>
