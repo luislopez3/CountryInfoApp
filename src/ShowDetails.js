@@ -22,7 +22,7 @@ export default function ShowDetails() {
     <>
       <h1>Details</h1>
       {countryDetails
-        .filter((item) => item.name.common === country)
+        .filter((item) => item.name === country)
         .map(
           (
             {
