@@ -29,7 +29,7 @@ export default function ShowDetails() {
         .map(
           (
             {
-              flag,
+              flags,
               name,
               capital,
               languages,
@@ -42,7 +42,7 @@ export default function ShowDetails() {
           ) => {
             return (
               <div ref={details} key={index}>
-                <img src={flag} alt={`${name.common}'s flag`} />
+                <img src={flags.png} alt={`${name.common}'s flag`} />
                 <h3 className="country-info">
                   Country Name:{" "}
                   <h4 className="country-details">{name.common}</h4>
