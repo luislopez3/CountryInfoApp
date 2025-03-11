@@ -30,7 +30,7 @@ export function countryByRegion(region) {
 export function countryInfo() {
   return axios
     .get(
-      "https://restcountries.com/v3.1/all?fields=name,capital,currencies,population,latlng,area,languages,flags"
+      "https://restcountries.com/v3.1/all?fields=name,capital,currencies,population,latlng,area,languages,flag"
     )
     .then((response) => {
       return response.data;

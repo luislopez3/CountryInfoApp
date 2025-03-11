@@ -25,11 +25,11 @@ export default function ShowDetails() {
     <>
       <h1>Details</h1>
       {countryDetails
-        .filter((item) => item.name.common === country)
+        .filter((item) => item.name === country)
         .map(
           (
             {
-              flags,
+              flag,
               name,
               capital,
               languages,
@@ -42,7 +42,7 @@ export default function ShowDetails() {
           ) => {
             return (
               <div ref={details} key={index}>
-                <img src={flags.png} alt={`${name.common}'s flag`} />
+                <img src={flag} alt={`${name.common}'s flag`} />
                 <h3 className="country-info">
                   Country Name:{" "}
                   <h4 className="country-details">{name.common}</h4>
